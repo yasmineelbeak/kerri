@@ -1,0 +1,476 @@
+/* global styling */
+:root{
+    --main-color:#e65f78;
+    --main-color-rgb:rgb(230, 95, 120);
+    --secondary-color:#2b2424;
+    --secondary-color-rgb:rgb(43, 36, 36);
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Nunito Sans", sans-serif;
+}
+.section-subtitle{ width:30rem}
+html{
+    scroll-padding-top: 58px;
+}
+/* start navbar */
+nav{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color:var(--main-color)
+}
+.nav-link{
+    color:var(--secondary-color);
+    transition: all .3s;
+}
+.nav-link:focus, .nav-link:hover{
+    color:var(--main-color)
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+   
+}
+.main-color{
+    color:var(--main-color);
+}
+/* .navbar-toggler-icon{
+    color:var(--main-color)
+} */
+/*End navbar */
+/* start header */
+header{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../images/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header .cv-btn{
+    border:1px solid #fff;
+    background-color: transparent;
+    color:#fff;
+    transition:  all .7s;
+}
+header .btn:hover {
+ background-color: #fff;
+ color:var(--secondary-color);
+ border:none
+}
+header .down-icon{
+    width:25px;
+    height: 40px;
+    border:3px solid #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 48px;
+    animation: down 3s infinite ease-in-out;
+}
+ @keyframes down {
+    0%{
+        bottom:50px
+    }
+    10%{
+        bottom:60px
+    }
+    20%{
+        bottom:50px
+    }
+    30%{
+        bottom:60px
+    }
+    40%{
+        bottom:50px
+    }
+    50%{
+        bottom:70px
+    }
+    60%{
+        bottom:50px
+    }
+    70%{
+        bottom:60px
+    }
+    80%{
+        bottom:50px
+    }
+    90%{
+        bottom:70px
+    }
+    100%{
+        bottom:50px
+    }
+    
+ }
+header .down-icon::after{
+    content:"";
+    position: absolute;
+    width:4px;
+    height: 8px;
+    background-color: #fff;
+    bottom: 10px;
+    
+}
+.fixed-icon .up-icon span{
+   color:var(--main-color)
+}
+.fixed-icon .setting{
+    left:-10px;
+    top:30%
+}
+header h1::after{
+    content:" |";
+    animation:typing 10s infinite linear;
+}
+@keyframes typing {
+    0%{
+        content:"A|"
+    }
+    1%{
+        content:"A |"
+    }
+    2%{
+        content:"A G|"
+    }
+    3%{
+        content:"A Gr|"
+    }
+    4%{
+        content:"A Gra|"
+    }
+    5%{
+        content:"A Grap|"
+    }
+    6%{
+        content:"A Graph|"
+    }
+    7%{
+        content:"A Graghi|"
+    }
+    8%{
+        content:"A Graphic|"
+    }
+    9%{
+        content:"A Graphic |"
+    }
+    10%{
+        content:"A Graphic D|"
+    }
+    11%{
+        content:"A Graphic De|"
+    }
+    12%{
+        content:"A Graphic Des|"
+    }
+    13%{
+        content:"A Graphic Desi|"
+    }
+    14%{
+        content:"A Graphic Desig|"
+    }
+    15%{
+        content:"A Graphic Design|"
+    }
+    16%{
+        content:"A Graphic Designe|"
+    }
+    17%{
+        content:"A Graphic Designer|"
+    }
+    18%{
+        content:"A Graphic Designer.|"
+    }
+    19%{
+        content:"A Graphic Designe|"
+    }
+    20%{
+        content:"A Graphic Design|"
+    }
+    21%{
+        content:"A Graphic Desig|"
+    }
+    22%{
+        content:"A Graphic Desi|"
+    }
+    23%{
+        content:"A Graphic De|"
+    }
+    24%{
+        content:"A Graphic D|"
+    }
+    25%{
+        content:"A Graphic |"
+    }
+    26%{
+        content:"A Graphic|"
+    }
+    27%{
+        content:"A Graphi|"
+    }
+    28%{
+        content:"A Graph|"
+    }
+    29%{
+        content:"A Grap|"
+    }
+    30%{
+        content:"A Gra|"
+    }
+    31%{
+        content:"A Gr|"
+    }
+    32%{
+        content:"A G|"
+    }
+    33%{
+        content:"A |"
+    }
+    34%{
+        content:"A P|"
+    }
+    35%{
+        content:"A Ph|"
+    }
+    36%{
+        content:"A Pho|"
+    }
+    37%{
+        content:"A Phot|"
+    }
+    38%{
+        content:"A Photo|"
+    }
+    39%{
+        content:"A Photop|"
+    }
+    40%{
+        content:"A Photog|"
+    }
+    41%{
+        content:"A Photogr|"
+    }
+    42%{
+        content:"A Photogra|"
+    }
+    43%{
+        content:"A Photograp|"
+    }
+    44%{
+        content:"A Photograph|"
+    }
+    45%{
+        content:"A Photographe|"
+    }
+    46%{
+        content:"A Photographer|"
+    }
+
+    47%{
+        content:"A Photographer.|"
+    }
+    48%{
+        content:"A Photographe|"
+    }
+    49%{
+        content:"A Photograph|"
+    }
+    50%{
+        content:"A Photograp|"
+    }
+    51%{
+        content:"A Photogra|"
+    }
+    52%{
+        content:"A Photogr|"
+    }
+    53%{
+        content:"A Photog|"
+    }
+    54%{
+        content:"A Photo|"
+    }
+    55%{
+        content:"A Phot|"
+    }
+    56%{
+        content:"A Pho|"
+    }
+    57%{
+        content:"A P|"
+    }
+    58%{
+        content:"A |"
+    }
+    59%{
+        content:"A|"
+    }
+    60%{
+        content:"|"
+    }
+    61%{
+        content:"|"
+    }
+    62%{
+        content:"|"
+    }
+    63%{
+        content:"|"
+    }
+    64%{
+        content:"K|"
+    }
+    65%{
+        content:"Ke|"
+    }
+    66%{
+        content:"Ker|"
+    }
+    67%{
+        content:"Kerr|"
+    }
+    68%{
+        content:"Kerri|"
+    }
+    69%{
+        content:"Kerri |"
+    }
+    70%{
+        content:"Kerri D|"
+    }
+    71%{
+        content:"Kerri De|"
+    }
+    72%{
+        content:"Kerri Deo|"
+    }
+    73%{
+        content:"Kerri Deo.|"
+    }
+    74%{
+        content:"Kerri Deo|"
+    }
+    75%{
+        content:"Kerri De|"
+    }
+    76%{
+        content:"Kerri D|"
+    }
+    77%{
+        content:"Kerri |"
+    }
+    78%{
+        content:"Kerri|"
+    }
+    79%{
+        content:"Kerr|"
+    }
+    80%{
+        content:"Ker|"
+    }
+    
+    81%{
+        content:"Ke|"
+    }
+    82%{
+        content:"K|"
+    }
+    83%{
+        content:"|"
+    }
+    84%{
+        content:"|"
+    }
+    85%{
+        content:"|"
+    }
+    87%{
+        content:"|"
+    }
+    88%{
+        content:"|"
+    }
+    89%{
+        content:"|"
+    }
+    90%{
+        content:"|"
+    }
+    95%{
+        content:"|"
+    }
+    100%{
+        content:"|"
+    }
+}
+/* end header */
+/*  Start Portfolio */
+
+
+
+/* .portfolio .item{
+    position:relative;
+} */
+.item{ cursor: pointer;}
+.work-layer{
+    opacity: 0;
+    transition: all .3s;
+}
+.item:hover .work-layer{ opacity: 1;}
+.img-cap{
+ top:120%;
+ transition: all .3s .1s;
+}
+.item:hover .img-cap{
+    top:0;
+   }
+   .item img{
+    transition: transform .3s;
+   }
+.item:hover img{
+    transform: scale(1.1);
+}
+#portfolio .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: var(--main-color);
+}
+#portfolio .nav-item button{
+ color:var(--secondary-color);
+}
+/* End Portfolio */
+/* start carousel */
+.carousel-dark .carousel-indicators [data-bs-target]
+{
+    background-color: var(--main-color);
+}
+/* .carousel-dark .carousel-indicators [data-bs-target] .active{
+    width: 20px;
+    height: 2px;
+    opacity: 1;
+} */
+.carousel-indicators [data-bs-target]{
+    width: 12px;
+    height: 5px;
+    opacity: .5;
+    border:1px solid var(--main-color);
+    border-radius: 20px;
+    
+}
+.carousel-indicators .active{
+    width: 20px;
+    height: 5px;
+    opacity: 1;
+  
+}
+    /* end carousel */
+    /* start about  */
+    .social-icons span .fa-stack-1x:hover, .fa-stack-2x:hover{
+      color:var(--main-color);
+    }
+ .social-icons .fa-regular:hover{
+        border:2px solid var(--main-color)
+    }
+    #contact button{
+        background-color: var(--main-color);
+    }
+    /* end about */
